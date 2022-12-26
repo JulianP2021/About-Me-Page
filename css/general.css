@@ -4,14 +4,17 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+#shiftdown {
+    height: 5vh;
+}
+
 .container {
-    
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
-.profile-image {
+.icon {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -33,11 +36,13 @@ p {
 
 nav {
     height: 5vh;
+    width: 100vw;
     background-color: #333;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 nav a {
