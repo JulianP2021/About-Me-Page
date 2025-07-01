@@ -15,13 +15,22 @@ body {
     text-align: center;
 }
 .icon {
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    object-fit: cover;
+    width: min(30vw, 30vh);
+    height: min(30vw, 30vh);
+    object-fit: fill;
     margin: 20px auto;
     border: 5px solid #333;
 }
+
+.icon-circle {
+    width: min(30vw, 30vh);
+    height: min(30vw, 30vh);
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 5px solid #333;
+}
+
 h1 {
     font-size: 32px;
     margin: 20px 0;
