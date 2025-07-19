@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />
+        <!--<img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />-->
 
         <p>
             Hi, my name is Julian Scharf and I am a Programmer. I have a passion for

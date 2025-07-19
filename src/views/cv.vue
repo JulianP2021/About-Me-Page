@@ -8,7 +8,7 @@ import { goToNextPage } from '@/shared';
     <div class="container">
       <div id="shiftdown"></div>
       <div class="card">
-        <img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />
+        <!--<img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />-->
 
         <div class="title">Education</div>
         <ul>
