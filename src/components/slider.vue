@@ -9,7 +9,7 @@ slides.push({
     headline: 'Hair Cutters',
     text: 'I created an online website for hair cutters to reserve times.',
     image: '/img/hair-cutters.png',
-    link: 'https://business-ch2.pages.dev/',
+    link: 'https://business.juli.workers.dev/',
     sublink: "https://marketing-87r.pages.dev/",
 });
 
