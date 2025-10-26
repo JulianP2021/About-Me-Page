@@ -28,3 +28,12 @@ function sendEmail() {
         </ul>
     </div>
 </template>
+
+<style scoped>
+.container { text-align: left; max-width: 780px; margin: 0 auto; }
+.container h2 { color: var(--color-heading); margin-bottom: 8px; }
+.container ul { padding-left: 18px; }
+.container li { margin: 8px 0; }
+.container button { background: var(--brand-accent); color: #fff; border: none; padding: 6px 12px; border-radius: 6px; }
+.container a { color: var(--brand-accent); }
+</style>

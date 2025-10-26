@@ -23,6 +23,12 @@
 
 /* semantic color variables for this project */
 :root {
+  /* site layout */
+  --nav-height: 64px;
+  --nav-bg: #111827; /* near-black */
+  --nav-text: #ffffff;
+  --brand-accent: #0ea5a4; /* teal-ish accent */
+
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -62,6 +68,8 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
+  /* offset fixed nav so page content doesn't hide under it */
+  padding-top: var(--nav-height);
   transition:
     color 0.5s,
     background-color 0.5s;

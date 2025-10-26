@@ -3,100 +3,118 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/cv">CV</RouterLink>
-    <RouterLink to="/projects">Projects</RouterLink>
-    <RouterLink to="/contact">Contact</RouterLink>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <RouterLink class="brand" to="/">Julian</RouterLink>
+      <div class="nav-links" role="menubar">
+        <RouterLink role="menuitem" to="/">Home</RouterLink>
+        <RouterLink role="menuitem" to="/cv">CV</RouterLink>
+        <RouterLink role="menuitem" to="/projects">Projects</RouterLink>
+        <RouterLink role="menuitem" to="/contact">Contact</RouterLink>
+      </div>
+    </div>
   </nav>
-  <div id="shiftdown"></div>
 
   <RouterView />
 </template>
 
 <style>
-#shiftdown {
-  height: 5vh;
+:root {
+  --site-max-width: 900px;
+}
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  z-index: 60;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+}
+
+.nav-inner {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--nav-text);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background: rgba(255,255,255,0.06);
+  outline: none;
 }
 
 .container {
-  max-width: 800px;
+  max-width: var(--site-max-width);
   margin: 0 auto;
-  padding: 20px;
+  padding: 24px;
   text-align: center;
 }
 
-.icon {
-  width: min(30vw, 30vh);
-  height: min(30vw, 30vh);
-  object-fit: fill;
-  margin: 20px auto;
-  border: 5px solid #333;
-}
-
 .icon-circle {
-  width: min(30vw, 30vh);
-  height: min(30vw, 30vh);
+  width: min(24vw, 220px);
+  height: min(24vw, 220px);
   object-fit: cover;
   border-radius: 50%;
   margin: 20px auto;
-  border: 5px solid #333;
+  border: 4px solid rgba(0,0,0,0.12);
 }
 
 h1 {
-  font-size: 32px;
-  margin: 20px 0;
-  color: #333;
+  font-size: 28px;
+  margin: 16px 0;
+  color: var(--color-heading);
 }
 
 p {
   font-size: 16px;
-  line-height: 1.5;
-  margin: 20px 0;
-  color: #666;
-}
-
-nav {
-  top: 0;
-  left: 0;
-  height: 5vh;
-  width: 100vw;
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-}
-
-nav a:hover {
-  background-color: #444;
+  line-height: 1.6;
+  margin: 16px 0;
+  color: var(--color-text);
 }
 
 button {
-
-  padding: 12px 36px;
-  border-radius: 5px;
-  background-color: #007bff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  background-color: var(--brand-accent);
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
 a {
-  color: #007bff;
+  color: var(--brand-accent);
   text-decoration: none;
 }
 
-ul {
-  list-style-position: inside;
-}
+ul { list-style-position: inside; }
 </style>

@@ -2,8 +2,6 @@
 import type { SliderPageProps } from './slider.types';
 
 const props = defineProps<SliderPageProps>();
-
-
 </script>
 
 <template>
@@ -24,3 +22,19 @@ const props = defineProps<SliderPageProps>();
     </swiper-slide>
 
 </template>
+
+<style scoped>
+img {
+    max-width: 400px;
+    max-height: 300px;
+    margin: 12px 0;
+}
+
+@media(max-width: 600px) {
+    img {
+        max-width: 300px;
+        max-height: 200px;
+    }
+    
+}
+</style>

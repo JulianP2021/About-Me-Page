@@ -5,13 +5,14 @@ import { register } from 'swiper/element/bundle';
 register();
 const slides = [];
 
-slides.push({
+/*slides.push({
     headline: 'Hair Cutters',
     text: 'I created an online website for hair cutters to reserve times.',
     image: '/img/hair-cutters.png',
     link: 'https://business.juli.workers.dev/',
     sublink: "https://marketing-87r.pages.dev/",
 });
+*/
 
 slides.push({
     headline: 'Writing Tool',
@@ -31,7 +32,7 @@ slides.push({
     headline: 'Fraktale',
     text: 'I created an interactive fractal visualizer.',
     image: '/img/fraktale.png',
-    link: 'https://fraktale.pages.dev/',
+    link: 'https://some-fractals.pages.dev/',
 });
 
 slides.push({
@@ -41,6 +42,12 @@ slides.push({
     link: 'https://pathfindingalgorithms.pages.dev/',
 });
 
+slides.push({
+    headline: '8-puzzle',
+    text: 'I created an interactive 8-puzzle game.',
+    image: '/img/8-puzzle.png',
+    link: 'https://8-puzzle.pages.dev/',
+});
 </script>
 
 

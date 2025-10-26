@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <!--<img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />-->
+        <img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />
 
         <p>
             Hi, my name is Julian Scharf and I am a Programmer. I have a passion for
@@ -12,3 +12,21 @@
         </p>
     </div>
 </template>
+
+<style scoped>
+/* small view-specific polish */
+.container {
+    padding-top: 8px;
+    text-align: center;
+}
+
+.icon-circle {
+    max-width: 220px;
+    max-height: 220px;
+}
+
+p {
+    color: var(--color-text);
+    font-size: 16px;
+}
+</style>

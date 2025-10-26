@@ -8,7 +8,7 @@ import { goToNextPage } from '@/shared';
     <div class="container">
       <div id="shiftdown"></div>
       <div class="card">
-        <!--<img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />-->
+        <img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />
 
         <div class="title">Education</div>
         <ul>
@@ -43,12 +43,14 @@ import { goToNextPage } from '@/shared';
 
 <style scoped>
 .card {
-  background-color: white;
-  border: 1px solid #eee;
-  color: #333;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-background-soft);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 6px 18px rgba(12, 15, 20, 0.06);
+  max-width: 820px;
+  margin: 12px auto;
 }
 
 .color h2 {
@@ -56,17 +58,17 @@ import { goToNextPage } from '@/shared';
 }
 
 .line {
-  border-bottom: 2px solid #9e9e9e;
-  margin: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+  margin: 18px 0;
 }
 
 
 .title {
   text-align: left;
-  color: black;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-left: 30px;
+  color: var(--color-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 18px;
+  padding-left: 8px;
 }
 </style>
