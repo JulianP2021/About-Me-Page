@@ -46,7 +46,7 @@ slides.push({
     headline: '8-puzzle',
     text: 'I created an interactive 8-puzzle game.',
     image: '/img/8-puzzle.png',
-    link: 'https://8-puzzle.pages.dev/',
+    link: 'https://some-8-puzzle.pages.dev/',
 });
 </script>
 
