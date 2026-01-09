@@ -6,10 +6,9 @@ import { goToNextPage } from '@/shared';
 <template>
   <main>
     <div class="container">
-      <div id="shiftdown"></div>
-      <div class="card">
+      <div class="content-card">
         <img src="/img/profile-image.jpg" alt="Julian's profile image" class="icon-circle" />
-
+        <h2>Curriculum Vitae</h2>
         <div class="title">Education</div>
         <ul>
           <li>I finished high school diploma called "Abitur" at the "Gegor-Mendel-Gymnasium"</li>
@@ -42,30 +41,13 @@ import { goToNextPage } from '@/shared';
 </template>
 
 <style scoped>
-.card {
-  background-color: var(--color-background-soft);
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
-  border-radius: 8px;
-  padding: 22px;
-  box-shadow: 0 6px 18px rgba(12, 15, 20, 0.06);
-  max-width: 820px;
-  margin: 12px auto;
-}
-
-.color h2 {
-  color: #333;
-}
-
 .line {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 18px 0;
 }
 
-
 .title {
   text-align: left;
-  color: var(--color-heading);
   font-weight: 700;
   font-size: 1.1rem;
   margin-top: 18px;

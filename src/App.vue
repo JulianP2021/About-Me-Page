@@ -81,6 +81,16 @@ import { RouterLink, RouterView } from 'vue-router'
   text-align: center;
 }
 
+.content-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  margin: 24px auto;
+  max-width: 780px;
+  backdrop-filter: blur(10px);
+}
+
 .icon-circle {
   width: min(24vw, 220px);
   height: min(24vw, 220px);
@@ -93,22 +103,53 @@ import { RouterLink, RouterView } from 'vue-router'
 h1 {
   font-size: 28px;
   margin: 16px 0;
-  color: var(--color-heading);
+  color: #1a202c;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 16px 0;
+  color: #1a202c;
 }
 
 p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 16px 0;
-  color: var(--color-text);
+  color: #2d3748;
+  font-weight: 400;
+}
+
+li {
+  color: #2d3748;
+  line-height: 1.7;
+  margin: 6px 0;
+}
+
+.title {
+  color: #1a202c;
 }
 
 button {
-  padding: 10px 22px;
-  border-radius: 6px;
-  background-color: var(--brand-accent);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  opacity: 0.9;
+}
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
 }
 
 a {
