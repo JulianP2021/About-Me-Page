@@ -14,8 +14,6 @@ const props = defineProps<SliderPageVideoProps>();
         <p>
             You can look at it on <br /><a :href="link">{{ link }}</a>
         </p>
-        <p>{{ video }}</p>
-
         <p v-if="sublink !== undefined">
             You can find informations, about the product at <br />
             <a v-if="sublink" :href="sublink">{{ sublink }}</a>
