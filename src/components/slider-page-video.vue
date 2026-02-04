@@ -8,7 +8,7 @@ const props = defineProps<SliderPageVideoProps>();
     <swiper-slide>
         <h2>{{ headline }}</h2>
         <p>
-            {{ text }}{{ video }}
+            {{ text }}
         </p>
         <video :src="video" controls class="icon" width="60%"/>
         <p>
